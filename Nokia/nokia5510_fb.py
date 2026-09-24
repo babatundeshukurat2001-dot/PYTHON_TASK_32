@@ -26,7 +26,7 @@ def main():
 =========================
 """)
 
-        choice = int(input("Enter choice: "))
+        choice = input("/nEnter choice: ")
 
         match choice:
 

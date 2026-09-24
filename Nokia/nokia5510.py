@@ -3,7 +3,7 @@ while True:
     print("\n==============================")
     print("          NOKIA MENU")
     print("==============================")
-
+ 
     print("1. Phone book")
     print("2. Messages")
     print("3. Chat")
@@ -21,11 +21,11 @@ while True:
     print("15. SIM Services")
     print("0. Exit")
 
-    choice = int(input("\nEnter main menu: "))
+    choice = input("\nEnter main menu: ")
 
     match choice:
-        case 1:
-            # ---------- PHONE BOOK ----------
+        case "1":
+            
             while True:
                 print("\n---------- PHONE BOOK ----------")
                 print("1. Search")
@@ -58,7 +58,7 @@ while True:
                     case 7:
                         print("Send b card")
                     case 8:
-                        # ---------- OPTIONS ----------
+                        
                         while True:
                             print("\n---------- OPTIONS ----------")
                             print("1. Type of view")
@@ -88,7 +88,7 @@ while True:
                         print("Invalid option.")
 
         case 2:
-            # ---------- MESSAGES ----------
+            
             while True:
                 print("\n---------- MESSAGES ----------")
                 print("1. Write messages")
@@ -119,7 +119,7 @@ while True:
                     case 6:
                         print("Smileys")
                     case 7:
-                        # ---------- MESSAGE SETTINGS ----------
+                        
                         while True:
                             print("\n---------- MESSAGE SETTINGS ----------")
                             print("1. Set 1")
@@ -129,17 +129,21 @@ while True:
                             sub2 = int(input("Enter: "))
 
                             match sub2:
+
                                 case 1:
                                     print("\n1. Message centre number")
                                     print("2. Messages sent as")
                                     print("3. Message validity")
+
                                 case 2:
                                     print("\n1. Delivery reports")
                                     print("2. Reply via same centre")
                                     print("3. Character support")
+
                                 case 0:
                                     print("Returning to Messages...")
                                     break
+
                                 case _:
                                     print("Invalid option.")
                     case 8:
@@ -158,7 +162,7 @@ while True:
             print("\nChat")
 
         case 4:
-            # ---------- CALL REGISTER ----------
+            
             while True:
                 print("\n---------- CALL REGISTER ----------")
                 print("1. Missed calls")
@@ -183,7 +187,7 @@ while True:
                     case 4:
                         print("Erase recent call lists")
                     case 5:
-                        # ---------- CALL DURATION ----------
+                       
                         while True:
                             print("\n---------- CALL DURATION ----------")
                             print("1. Last call duration")
@@ -212,7 +216,7 @@ while True:
                                 case _:
                                     print("Invalid option.")
                     case 6:
-                        # ---------- CALL COSTS ----------
+                        
                         while True:
                             print("\n---------- CALL COSTS ----------")
                             print("1. Last call cost")
@@ -235,7 +239,7 @@ while True:
                                 case _:
                                     print("Invalid option.")
                     case 7:
-                        # ---------- CALL COST SETTINGS ----------
+                        
                         while True:
                             print("\n---------- CALL COST SETTINGS ----------")
                             print("1. Call cost settings")
@@ -263,7 +267,7 @@ while True:
                         print("Invalid option.")
 
         case 5:
-            # ---------- TONES ----------
+           
             while True:
                 print("\n---------- TONES ----------")
                 print("1. Ringing tone")
@@ -305,7 +309,7 @@ while True:
                         print("Invalid option.")
 
         case 6:
-            # ---------- SETTINGS ----------
+           
             while True:
                 print("\n---------- SETTINGS ----------")
                 print("1. Call settings")
@@ -325,6 +329,7 @@ while True:
                         print("4. Own number sending")
                         print("5. Phone line in use")
                         print("6. Automatic answer")
+
                     case 2:
                         print("\n---------- PHONE SETTINGS ----------")
                         print("1. Language")
@@ -333,6 +338,7 @@ while True:
                         print("4. Network selection")
                         print("5. Lights")
                         print("6. Confirm SIM service actions")
+
                     case 3:
                         print("\n---------- SECURITY SETTINGS ----------")
                         print("1. PIN code request")
@@ -341,11 +347,14 @@ while True:
                         print("4. Closed user group")
                         print("5. Phone security")
                         print("6. Change access codes")
+
                     case 4:
                         print("Restore factory settings")
+
                     case 0:
                         print("Returning to main menu...")
                         break
+
                     case _:
                         print("Invalid option.")
 
@@ -353,7 +362,7 @@ while True:
             print("\nCall divert")
 
         case 8:
-            # ---------- MUSIC ----------
+           
             while True:
                 print("\n---------- MUSIC ----------")
                 print("1. Music player")
@@ -389,7 +398,7 @@ while True:
             print("\nReminders")
 
         case 12:
-            # ---------- CLOCK ----------
+            
             while True:
                 print("\n---------- CLOCK ----------")
                 print("1. Alarm clock")
@@ -422,7 +431,7 @@ while True:
                         print("Invalid option.")
 
         case 13:
-            # ---------- PROFILES ----------
+           
             while True:
                 print("\n---------- PROFILES ----------")
                 print("1. General")
@@ -452,7 +461,7 @@ while True:
                         print("Invalid option.")
 
         case 14:
-            # ---------- WAP SERVICES ----------
+            
             while True:
                 print("\n---------- WAP SERVICES ----------")
                 print("1. Home")
@@ -479,7 +488,7 @@ while True:
                         print("Invalid option.")
 
         case 15:
-            # ---------- SIM SERVICES ----------
+            
             while True:
                 print("\n---------- SIM SERVICES ----------")
                 print("1. SIM menu")
