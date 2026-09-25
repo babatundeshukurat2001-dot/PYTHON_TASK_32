@@ -22,6 +22,7 @@ while True:
     print("0. Exit")
 
     choice = input("\nEnter main menu: ")
+    choice = choice.strip()
 
     match choice:
         case "1":
@@ -40,24 +41,24 @@ while True:
                 print("10. Voice tags")
                 print("0. Back")
 
-                sub = int(input("Enter: "))
+                sub = input("Enter: ")
 
                 match sub:
-                    case 1:
+                    case "1":
                         print("Search")
-                    case 2:
+                    case "2":
                         print("Service Nos.")
-                    case 3:
+                    case "3":
                         print("Add name")
-                    case 4:
+                    case "4":
                         print("Erase")
-                    case 5:
+                    case "5":
                         print("Edit")
-                    case 6:
+                    case "6":
                         print("Assign tone")
-                    case 7:
+                    case "7":
                         print("Send b card")
-                    case 8:
+                    case "8":
                         
                         while True:
                             print("\n---------- OPTIONS ----------")
@@ -65,23 +66,23 @@ while True:
                             print("2. Memory status")
                             print("0. Back")
 
-                            sub2 = int(input("Enter: "))
+                            sub2 = input("Enter: ")
 
                             match sub2:
-                                case 1:
+                                case "1":
                                     print("Type of view")
-                                case 2:
+                                case "2":
                                     print("Memory status")
-                                case 0:
+                                case "0":
                                     print("Returning to Phone Book...")
                                     break
                                 case _:
                                     print("Invalid option.")
-                    case 9:
+                    case "9":
                         print("Speed dials")
-                    case 10:
+                    case "10":
                         print("Voice tags")
-                    case 0:
+                    case "0":
                         print("Returning to main menu...")
                         break
                     case _:
@@ -103,22 +104,22 @@ while True:
                 print("10. Service command editor")
                 print("0. Back")
 
-                sub = int(input("Enter: "))
+                sub = input("Enter: ")
 
                 match sub:
-                    case 1:
+                    case "1":
                         print("Write messages")
-                    case 2:
+                    case "2":
                         print("Inbox")
-                    case 3:
+                    case "3":
                         print("Outbox")
-                    case 4:
+                    case "4":
                         print("Picture messages")
-                    case 5:
+                    case "5":
                         print("Templates")
-                    case 6:
+                    case "6":
                         print("Smileys")
-                    case 7:
+                    case "7":
                         
                         while True:
                             print("\n---------- MESSAGE SETTINGS ----------")
@@ -126,42 +127,42 @@ while True:
                             print("2. Common")
                             print("0. Back")
 
-                            sub2 = int(input("Enter: "))
+                            sub2 = input("Enter: ")
 
                             match sub2:
 
-                                case 1:
+                                case "1":
                                     print("\n1. Message centre number")
                                     print("2. Messages sent as")
                                     print("3. Message validity")
 
-                                case 2:
+                                case "2":
                                     print("\n1. Delivery reports")
                                     print("2. Reply via same centre")
                                     print("3. Character support")
 
-                                case 0:
+                                case "0":
                                     print("Returning to Messages...")
                                     break
 
                                 case _:
                                     print("Invalid option.")
-                    case 8:
+                    case "8":
                         print("Info service")
-                    case 9:
+                    case "9":
                         print("Voice mailbox number")
-                    case 10:
+                    case "10":
                         print("Service command editor")
-                    case 0:
+                    case "0":
                         print("Returning to main menu...")
                         break
                     case _:
                         print("Invalid option.")
 
-        case 3:
+        case "3":
             print("\nChat")
 
-        case 4:
+        case "4":
             
             while True:
                 print("\n---------- CALL REGISTER ----------")
@@ -175,18 +176,18 @@ while True:
                 print("8. Prepaid credit")
                 print("0. Back")
 
-                sub = int(input("Enter: "))
+                sub = input("Enter: ")
 
                 match sub:
-                    case 1:
+                    case "1":
                         print("Missed calls")
-                    case 2:
+                    case "2":
                         print("Received calls")
-                    case 3:
+                    case "3":
                         print("Dialled numbers")
-                    case 4:
+                    case "4":
                         print("Erase recent call lists")
-                    case 5:
+                    case "5":
                        
                         while True:
                             print("\n---------- CALL DURATION ----------")
@@ -197,25 +198,25 @@ while True:
                             print("5. Clear timers")
                             print("0. Back")
 
-                            sub2 = int(input("Enter: "))
+                            sub2 = input("Enter: ")
 
                             match sub2:
-                                case 1:
+                                case "1":
                                     print("Last call duration")
-                                case 2:
+                                case "2":
                                     print("All calls duration")
-                                case 3:
+                                case "3":
                                     print("Received calls duration")
-                                case 4:
+                                case "4":
                                     print("Dialled calls duration")
-                                case 5:
+                                case "5":
                                     print("Clear timers")
-                                case 0:
+                                case "0":
                                     print("Returning to Call Register...")
                                     break
                                 case _:
                                     print("Invalid option.")
-                    case 6:
+                    case "6":
                         
                         while True:
                             print("\n---------- CALL COSTS ----------")
@@ -224,21 +225,21 @@ while True:
                             print("3. Clear counters")
                             print("0. Back")
 
-                            sub2 = int(input("Enter: "))
+                            sub2 = input("Enter: ")
 
                             match sub2:
-                                case 1:
+                                case "1":
                                     print("Last call cost")
-                                case 2:
+                                case "2":
                                     print("All calls' cost")
-                                case 3:
+                                case "3":
                                     print("Clear counters")
-                                case 0:
+                                case "0":
                                     print("Returning to Call Register...")
                                     break
                                 case _:
                                     print("Invalid option.")
-                    case 7:
+                    case "7":
                         
                         while True:
                             print("\n---------- CALL COST SETTINGS ----------")
@@ -246,27 +247,27 @@ while True:
                             print("2. Show cost limit")
                             print("0. Back")
 
-                            sub2 = int(input("Enter: "))
+                            sub2 = input("Enter: ")
 
                             match sub2:
-                                case 1:
+                                case "1":
                                     print("Call cost settings")
-                                case 2:
+                                case "2":
                                     print("Show cost limit")
-                                case 0:
+                                case "0":
                                     print("Returning to Call Register...")
                                     break
                                 case _:
                                     print("Invalid option.")
-                    case 8:
+                    case "8":
                         print("Prepaid credit")
-                    case 0:
+                    case "0":
                         print("Returning to main menu...")
                         break
                     case _:
                         print("Invalid option.")
 
-        case 5:
+        case "5":
            
             while True:
                 print("\n---------- TONES ----------")
@@ -281,34 +282,34 @@ while True:
                 print("9. Screen saver")
                 print("0. Back")
 
-                sub = int(input("Enter: "))
+                sub = input("Enter: ")
 
                 match sub:
-                    case 1:
+                    case "1":
                         print("Ringing tone")
-                    case 2:
+                    case "2":
                         print("Ringing volume")
-                    case 3:
+                    case "3":
                         print("Incoming call alert")
-                    case 4:
+                    case "4":
                         print("Composer")
-                    case 5:
+                    case "5":
                         print("Message alert tone")
-                    case 6:
+                    case "6":
                         print("Keypad tones")
-                    case 7:
+                    case "7":
                         print("Warning and game tones")
-                    case 8:
+                    case "8":
                         print("Vibrating alert")
-                    case 9:
+                    case "9":
                         print("Screen saver")
-                    case 0:
+                    case "0":
                         print("Returning to main menu...")
                         break
                     case _:
                         print("Invalid option.")
 
-        case 6:
+        case "6":
            
             while True:
                 print("\n---------- SETTINGS ----------")
@@ -318,10 +319,10 @@ while True:
                 print("4. Restore factory settings")
                 print("0. Back")
 
-                sub = int(input("Enter: "))
+                sub = input("Enter: ")
 
                 match sub:
-                    case 1:
+                    case "1":
                         print("\n---------- CALL SETTINGS ----------")
                         print("1. Automatic redial")
                         print("2. Speed dialling")
@@ -330,7 +331,7 @@ while True:
                         print("5. Phone line in use")
                         print("6. Automatic answer")
 
-                    case 2:
+                    case "2":
                         print("\n---------- PHONE SETTINGS ----------")
                         print("1. Language")
                         print("2. Cell info display")
@@ -339,7 +340,7 @@ while True:
                         print("5. Lights")
                         print("6. Confirm SIM service actions")
 
-                    case 3:
+                    case "3":
                         print("\n---------- SECURITY SETTINGS ----------")
                         print("1. PIN code request")
                         print("2. Call barring service")
@@ -348,20 +349,20 @@ while True:
                         print("5. Phone security")
                         print("6. Change access codes")
 
-                    case 4:
+                    case "4":
                         print("Restore factory settings")
 
-                    case 0:
+                    case "0":
                         print("Returning to main menu...")
                         break
 
                     case _:
                         print("Invalid option.")
 
-        case 7:
+        case "7":
             print("\nCall divert")
 
-        case 8:
+        case "8":
            
             while True:
                 print("\n---------- MUSIC ----------")
@@ -371,33 +372,33 @@ while True:
                 print("4. Track list")
                 print("0. Back")
 
-                sub = int(input("Enter: "))
+                sub = input("Enter: ")
 
                 match sub:
-                    case 1:
+                    case "1":
                         print("Music player")
-                    case 2:
+                    case "2":
                         print("Radio")
-                    case 3:
+                    case "3":
                         print("Recorder")
-                    case 4:
+                    case "4":
                         print("Track list")
-                    case 0:
+                    case "0":
                         print("Returning to main menu...")
                         break
                     case _:
                         print("Invalid option.")
 
-        case 9:
+        case "9":
             print("\nGames")
 
-        case 10:
+        case "10":
             print("\nCalculator")
 
-        case 11:
+        case "11":
             print("\nReminders")
 
-        case 12:
+        case "12":
             
             while True:
                 print("\n---------- CLOCK ----------")
@@ -409,28 +410,28 @@ while True:
                 print("6. Auto update of date and time")
                 print("0. Back")
 
-                sub = int(input("Enter: "))
+                sub = input("Enter: ")
 
                 match sub:
-                    case 1:
+                    case "1":
                         print("Alarm clock")
-                    case 2:
+                    case "2":
                         print("Clock settings")
-                    case 3:
+                    case "3":
                         print("Date setting")
-                    case 4:
+                    case "4":
                         print("Stopwatch")
-                    case 5:
+                    case "5":
                         print("Countdown timer")
-                    case 6:
+                    case "6":
                         print("Auto update of date and time")
-                    case 0:
+                    case "0":
                         print("Returning to main menu...")
                         break
                     case _:
                         print("Invalid option.")
 
-        case 13:
+        case "13":
            
             while True:
                 print("\n---------- PROFILES ----------")
@@ -441,26 +442,26 @@ while True:
                 print("5. Pager")
                 print("0. Back")
 
-                sub = int(input("Enter: "))
+                sub = input("Enter: ")
 
                 match sub:
-                    case 1:
+                    case "1":
                         print("General profile")
-                    case 2:
+                    case "2":
                         print("Silent profile")
-                    case 3:
+                    case "3" :
                         print("Meeting profile")
-                    case 4:
+                    case "4":
                         print("Outdoor profile")
-                    case 5:
+                    case "5":
                         print("Pager profile")
-                    case 0:
+                    case "0":
                         print("Returning to main menu...")
                         break
                     case _:
                         print("Invalid option.")
 
-        case 14:
+        case "14":
             
             while True:
                 print("\n---------- WAP SERVICES ----------")
@@ -470,24 +471,24 @@ while True:
                 print("4. Settings")
                 print("0. Back")
 
-                sub = int(input("Enter: "))
+                sub = input("Enter: ")
 
                 match sub:
-                    case 1:
+                    case "1":
                         print("Home")
-                    case 2:
+                    case "2":
                         print("Bookmarks")
-                    case 3:
+                    case "3":
                         print("Service inbox")
-                    case 4:
+                    case "4":
                         print("WAP settings")
-                    case 0:
+                    case "0":
                         print("Returning to main menu...")
                         break
                     case _:
                         print("Invalid option.")
 
-        case 15:
+        case "15":
             
             while True:
                 print("\n---------- SIM SERVICES ----------")
@@ -496,22 +497,22 @@ while True:
                 print("3. SIM applications")
                 print("0. Back")
 
-                sub = int(input("Enter: "))
+                sub = input("Enter: ")
 
                 match sub:
-                    case 1:
+                    case "1":
                         print("SIM menu")
-                    case 2:
+                    case "2":
                         print("SIM information")
-                    case 3:
+                    case "3":
                         print("SIM applications")
-                    case 0:
+                    case "0":
                         print("Returning to main menu...")
                         break
                     case _:
                         print("Invalid option.")
 
-        case 0:
+        case "0":
             print("\nGoodbye!")
             break
 
