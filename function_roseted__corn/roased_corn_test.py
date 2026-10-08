@@ -1,6 +1,6 @@
 import unittest
 
-from functions import (
+from roasted_corn import (
     string_length, first_last_two, add_ing, longest_word,
     remove_odd_index_chars, keep_odd_index_chars, find_min, find_max,
     repeat_string, square_list, sum_of_squares,
