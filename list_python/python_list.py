@@ -1,6 +1,7 @@
 import random
 
 def create_random_list(size=10, low=1, high=50):
+
     return [random.randint(low, high) for _ in range(size)]
 
 
